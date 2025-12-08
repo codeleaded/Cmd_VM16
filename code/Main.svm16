@@ -2,5 +2,6 @@ start:
     mov     r0      pos
     load    r0      r0
     mov     $0      r0
+    
 pos:
     word    69
