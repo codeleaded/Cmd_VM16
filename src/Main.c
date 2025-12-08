@@ -25,6 +25,9 @@ int main(){
     VM16_Comp(&vm,VM16_MEMORY_LOW,"./code/Main.svm16","./code/Main.vm16");
     VM16_Load(&vm,VM16_MEMORY_LOW,"./code/Main.vm16");
     VM16_Run(&vm,VM16_MEMORY_LOW);
+
+    printf("Exitcode: %d\n",vm.exitcode);
+
     VM16_Free(&vm);
     return 0;
 }
