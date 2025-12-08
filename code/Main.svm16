@@ -1,0 +1,10 @@
+start:
+    mov     $20480  hello
+    mov     $20481  buffer
+    mov     $20480  buffer
+    mov     $0      0
+
+hello:
+    byte    "Hello World" 10 0 0 0
+buffer:
+    byte    #16

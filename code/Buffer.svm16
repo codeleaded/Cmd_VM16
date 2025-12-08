@@ -1,0 +1,21 @@
+start:
+    mov     r0  1
+    mov     r1  2
+    mov     r2  $0
+    add     r0  r1
+    sub     r2  r3
+    mul     pc  sp
+    div     num  r0
+
+num:
+    byte    0   0
+    byte    "Hello World"
+    byte    #10
+
+hello:
+    byte    0   0
+    byte    "Hello World"
+    byte    #10
+    
+some:
+    word    0   0
