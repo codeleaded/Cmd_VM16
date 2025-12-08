@@ -1,10 +1,18 @@
 start:
-    mov     $20480  hello
-    mov     $20481  buffer
-    mov     $20480  buffer
-    mov     $0      0
+    mov     r0      0
+    mov     $20738  0
+    
+    mov     r0,0
+    mov     r1,0
+    mov     r2,50
+    mov     r3,50
+    mov     $30351  65535
 
-hello:
-    byte    "Hello World" 0
-buffer:
-    byte    #16
+    mov     $20739  0
+    mov     $1      5
+
+    mov     r0      $20735  
+    sub     r0      1
+    jz      start
+
+    mov     $0      0
