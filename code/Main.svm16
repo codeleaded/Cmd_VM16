@@ -6,12 +6,16 @@ start:
 
     mov     $20480  buffer
 
-    ;mov     $30465  path
+    mov     r0      other
+    mov     $30467  entry
+    mov     $30465  path
     mov     $0      0
 
 path:
-    byte    "./code/Main.yaml" 0
+    byte    "./code/Main.yaml" 0 0
 entry:
-    byte    "private/other" 0
+    byte    "private/other" 0 0
 buffer:
     byte    #32
+other:
+    byte    "Wow + Hello World" 0

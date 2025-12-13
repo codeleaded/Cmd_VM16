@@ -1,6 +1,6 @@
 private:
-  other: "Wow"
-  this: "uwu"
+  other: Wow
+  this: uwu
 public:
-  hello: "Hello"
-  world: "World"
+  hello: Hello
+  world: World
