@@ -7,7 +7,7 @@ start:
     add     $pos    1
     mov     r0      50
     sub     r0      $pos
-    jnz      b0
+    jnz     b0
     mov     $pos    0
 b0:
     mov     r0      $pos
