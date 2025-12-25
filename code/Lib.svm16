@@ -1,4 +1,4 @@
-global say_hello:
+global say.hello:
     mov     $20480  greeting
     ret
 

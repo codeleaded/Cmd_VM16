@@ -1,7 +1,7 @@
-extern say_hello
+extern say.hello
 
 global _start:
-    call    say_hello
+    call    say.hello
     ld      r0      num
     ld      r0      r0
     mov     $0      r0
