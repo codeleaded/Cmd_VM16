@@ -12,7 +12,7 @@ start:
     mov     $0      0
 
 path:
-    byte    "./code/Main.yaml" 0 0
+    byte    "./data/Main.yaml" 0 0
 entry:
     byte    "private/other" 0 0
 buffer:
