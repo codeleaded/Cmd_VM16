@@ -33,7 +33,7 @@ int main(){
     VM16_Comp(&vm,"./code/Lib.svm16","./asm/Lib.lvm16");
     VM16_Link(&vm,VM16_MEMORY_LOW,"_start",(CStr[]){ "./asm/Main.lvm16","./asm/Lib.lvm16",NULL },"./asm/Main.vm16");
     VM16_Load(&vm,VM16_MEMORY_LOW,"./asm/Main.vm16");
-    //VM16_Disassemble(&vm,VM16_GetRam(&vm)->data,100);
+    VM16_Disassemble(&vm,VM16_GetRam(&vm)->data,100);
     VM16_Run(&vm,VM16_MEMORY_LOW);
 
     printf("Exitcode: %d\n",vm.exitcode);
