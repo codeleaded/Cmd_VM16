@@ -1,11 +1,17 @@
 #if defined(__linux__)
 #include "/home/codeleaded/System/Static/Library/VM16.h"
+#include "/home/codeleaded/System/Static/Library/VM16_Assembler.h"
+#include "/home/codeleaded/System/Static/Library/VM16_Linker.h"
 #include "/home/codeleaded/System/Static/Library/VM16_Devices.h"
 #elif defined(_WINE)
 #include "/home/codeleaded/System/Static/Library/VM16.h"
+#include "/home/codeleaded/System/Static/Library/VM16_Assembler.h"
+#include "/home/codeleaded/System/Static/Library/VM16_Linker.h"
 #include "/home/codeleaded/System/Static/Library/VM16_Devices.h"
 #elif defined(_WIN32)
 #include "F:/home/codeleaded/System/Static/Library/VM16.h"
+#include "F:/home/codeleaded/System/Static/Library/VM16_Assembler.h"
+#include "F:/home/codeleaded/System/Static/Library/VM16_Linker.h"
 #include "F:/home/codeleaded/System/Static/Library/VM16_Devices.h"
 #elif defined(__APPLE__)
 #error "Apple not supported!"
