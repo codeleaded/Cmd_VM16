@@ -1,0 +1,25 @@
+_start:
+    st      sum     0
+    st      count   0
+    
+for:
+    ld      r0      count
+    sub     r0      10
+    jpz     endfor
+
+    ld      r3      sum
+    add     r3      1
+    st      sum     r3
+    
+    ld      r0      count
+    add     r0      1
+    st      count   r0
+    jmp     for
+endfor:
+    ld      r0      sum
+    mov     $0      r0
+
+sum:
+    word    0
+count:
+    word    0
