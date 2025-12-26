@@ -27,13 +27,13 @@ int main(){
     //VM16_ConnectDevice(&vm,(VM16_MPU[]){    VM16_MPU_New(VM16_MPU_LOW,      VM16_MPU_HIGH)      });
     //VM16_ConnectDevice(&vm,(VM16_DSP[]){    VM16_DSP_New(VM16_DSP_LOW,      VM16_DSP_HIGH)      });
     //VM16_ConnectDevice(&vm,(VM16_GPU[]){    VM16_GPU_New(VM16_GPU_LOW,      VM16_GPU_HIGH)      });
-    VM16_ConnectDevice(&vm,(VM16_SSD[]){    VM16_SSD_New(VM16_SSD_LOW,      VM16_SSD_HIGH)      });
+    //VM16_ConnectDevice(&vm,(VM16_SSD[]){    VM16_SSD_New(VM16_SSD_LOW,      VM16_SSD_HIGH)      });
     
     VM16_Comp(&vm,"./code/Main.svm16","./asm/Main.lvm16");
     VM16_Comp(&vm,"./code/Lib.svm16","./asm/Lib.lvm16");
     VM16_Link(&vm,VM16_MEMORY_LOW,"_start",(CStr[]){ "./asm/Main.lvm16","./asm/Lib.lvm16",NULL },"./asm/Main.vm16");
     VM16_Load(&vm,VM16_MEMORY_LOW,"./asm/Main.vm16");
-    VM16_Disassemble(&vm,VM16_GetRam(&vm)->data,100);
+    //VM16_Disassemble(&vm,VM16_GetRam(&vm)->data,100);
     VM16_Run(&vm,VM16_MEMORY_LOW);
 
     printf("Exitcode: %d\n",vm.exitcode);
