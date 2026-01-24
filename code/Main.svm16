@@ -1,6 +1,7 @@
 extern say.hello
 
 global _start:
+    
     call    say.hello
     ld      r0      num
     ld      r0      r0
